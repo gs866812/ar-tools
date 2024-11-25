@@ -38,7 +38,7 @@ const Login = () => {
       const emailData = { email: user.email };
 
       // Request to get JWT token
-      const res = await axios.post('https://api.rm.toolscare.net/jwt', emailData);
+      const res = await axios.post('https://api.ar.toolscare.net/jwt', emailData);
       if (res.data.token) {
         localStorage.setItem('jwtToken', res.data.token); // Store token in localStorage
         setUser(user); // Set the user context

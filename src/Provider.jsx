@@ -47,7 +47,7 @@ const Provider = ({ children }) => {
     const token = localStorage.getItem("jwtToken");
     if (token) {
       try {
-        const response = await axios.post("https://api.rm.toolscare.net/validate-token", null, {
+        const response = await axios.post("https://api.ar.toolscare.net/validate-token", null, {
           headers: { Authorization: `Bearer ${token}` }
       });  
         if (response.data.success) {

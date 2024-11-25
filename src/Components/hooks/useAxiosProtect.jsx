@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 // Create axios instance
 const axiosProtect = axios.create({
-    baseURL: 'https://api.rm.toolscare.net',
+    baseURL: 'https://api.ar.toolscare.net',
 });
 
 // Axios Interceptor Hook
